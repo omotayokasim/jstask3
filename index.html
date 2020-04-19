@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<meta charset = "UTF-8">
+<title>Third Task Javascript(Start.ng)</title>
+<body>
+
+    <script>
+
+
+function task(numb)
+
+    {
+
+let result = [];
+for (let i = 1; i <= numb; i++)
+
+    {
+
+let divTest ;
+
+if (i % 2 == 0 && i % 3 == 0 && i % 5 == 0)
+     {
+      divTest = '"yu-gi-oh"';
+      result.push(divTest);
+
+}
+
+else if (i % 3 == 0 && i % 5 == 0 )
+{
+      divTest = '"gi-oh"';
+      result.push(divTest);
+
+}
+
+else if (i % 2 == 0 && i % 3 == 0 )
+{
+      divTest = '"yu-gi"';
+      result.push(divTest);
+
+}
+else if (i % 2 == 0 && i % 5 == 0 )
+{
+      divTest = '"yu-oh"';
+      result.push(divTest);
+}
+else if (i % 2 == 0 )
+{
+      divTest = '"yu"';
+      result.push(divTest);
+
+}
+
+else if (i % 3 == 0 )
+{
+      divTest = '"gi"';
+      result.push(divTest);
+
+}
+
+else if (i % 5 == 0 )
+{
+      divTest = '"oh"';
+      result.push(divTest);
+
+}
+else {divTest = i;
+      
+result.push(divTest);
+}
+    }
+
+
+return result;
+}
+
+console.log(task(100));
+console.log(task(500));
+
+ 
+
+</script>
+
+
+
+</body>
+
+
+</html>
